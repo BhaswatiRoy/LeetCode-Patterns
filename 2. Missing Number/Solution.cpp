@@ -1,6 +1,6 @@
 class Solution {
 public:
-    //better - O(nlogn)
+    //better - sorting & comparing value at index i with index i - TC=O(nlogn), SC=O(1)
     int missingNumber(vector<int>& nums) 
     {
         int val;
@@ -16,7 +16,7 @@ public:
         return val;
     }
   
-    //optimal - O(n)
+    //optimal - using mathematical formula for calculating actual sum then compare with computed sum - Tc=O(n), SC=O(1)
     int missingNumber(vector<int>& nums) 
     {
         int sum=0,n=nums.size();
