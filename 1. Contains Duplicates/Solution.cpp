@@ -1,6 +1,6 @@
 class Solution {
 public:
-  //brute - running 2 nested loops to check - O(n^2)
+  //brute - running 2 nested loops to check - TC=O(n^2), SC=O(1)
     bool containsDuplicate(vector<int>& nums) 
     {
         for(int i=0;i<nums.size();i++)
@@ -16,7 +16,7 @@ public:
         return false;
     }
     
-    //better - sorting and comparing adjacents - O(nlogn)
+    //better - sorting and comparing adjacents - O(nlogn), SC=O(1)
     bool containsDuplicate(vector<int>& nums) 
     {
         sort(nums.begin(),nums.end());
@@ -30,7 +30,7 @@ public:
         return false;
     }
     
-    //Optimal - using maps to store frequency - O(n)
+    //Optimal - using maps to store frequency - O(n), SC=O(n)
     bool containsDuplicate(vector<int>& nums) 
     {
         unordered_map<int,int>mp;
