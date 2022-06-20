@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //better - using maps to store frequency and then checking if any element is not in map - TC-O(n), SC-O(n)
     vector<int> findDisappearedNumbers(vector<int>& nums) 
     {
         unordered_map<int,int>mp;
